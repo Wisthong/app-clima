@@ -2,7 +2,7 @@ import {WeatherData} from '../interfaces/WeatherData'
 
 export const Location = ({data: {city, country}}: {data: WeatherData}) => {
   return (
-    <header className="flex text-white text-4xl font-bold p-4 mt-12">
+    <header className="flex text-white text-4xl font-bold p-4 mt-12 animate__animated animate__jello animate__slower">
         <p className="mr-2" id="city">
             {city}
         </p>
