@@ -10,7 +10,7 @@ export const DregeeSection = ({data: {temperature, icon ,description}}: {data: W
             °C
         </section>
         <section>
-            <img id="iconImg" src={icon} alt="No existe" />
+            <img id="iconImg" src={icon}/>
         </section>
         <section className="font-bold uppercase text-4xl text-white mb-6" id="description">
             {description}

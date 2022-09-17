@@ -14,6 +14,6 @@ export const getWeatherByCoords = async (
 export const getWeatherBySearch = async (CITY: string): Promise<any> => {
   const API_CITY = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}`;
   const response = await fetch(API_CITY);
-  const data = await response.json();
-  return data;
+  const respData = await response.json();
+  return respData;
 };
